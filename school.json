@@ -1,0 +1,9 @@
+"definition": {
+    "name": {
+        "nb-NO": "Abildsø skole"
+    },
+    "type": "https://w3id.org/xapi/avt/activity-types/school",
+    "extensions": {
+        "https://w3id.org/xapi/adaptivity_and_assessment/extensions/authorative_uri": { "uri": "https://data-nsr.udir.no/enhet/974589648" }
+    }
+}
