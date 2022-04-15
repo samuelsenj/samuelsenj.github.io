@@ -1,0 +1,9 @@
+{
+    "name": {
+        "nb-NO": "Oslo kommune Utdanningsetaten"
+    },
+    "type": "https://w3id.org/xapi/avt/activity-types/school-owner",
+    "extensions": {
+        "https://w3id.org/xapi/adaptivity_and_assessment/extensions/authoritative_uri": "https://data-nsr.udir.no/enhet/976820037"
+    }
+}
