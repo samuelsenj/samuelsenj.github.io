@@ -1,0 +1,9 @@
+{
+    "name": {
+        "nb-NO": "Inspera Assessment"
+    },
+    "type": "https://w3id.org/xapi/avt/activity-types/platform",
+    "extensions": {
+        "https://w3id.org/xapi/adaptivity_and_assessment/extensions/authoritative_uri": "https://www.inspera.com/assessment"
+    }
+}
