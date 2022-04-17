@@ -1,0 +1,62 @@
+{
+    "type": "object",
+    "required": [
+        "platform"
+    ],
+    "properties": {
+        "platform": {
+            "$id": "#/properties/platform",
+            "type": "object",
+            "required": [
+                "id"
+            ],
+            "properties": {
+                "id": {
+                    "$id": "#/properties/platform/properties/id",
+                    "type": "string",
+                    "format": "uri"
+                },
+                "objectType": {
+                    "$id": "#/properties/platform/properties/objectType",
+                    "type": "string"
+                }
+            },
+            "additionalProperties": true
+        },
+        "course": {
+            "$id": "#/properties/course",
+            "type": "object",
+            "required": [
+                "id"
+            ],
+            "properties": {
+                "id": {
+                    "$id": "#/properties/course/properties/id",
+                    "type": "string",
+                    "format": "uri"
+                },
+                "objectType": {
+                    "$id": "#/properties/course/properties/objectType",
+                    "type": "string"
+                }
+            },
+            "additionalProperties": true
+        },
+        "feide-clientinfo": {
+            "$id": "#/properties/feide-clientinfo",
+            "type": "object",
+            "properties": {
+                "homePage": {
+                    "$id": "#/properties/feide-clientinfo/properties/id",
+                    "type": "string"
+                },
+                "name": {
+                    "$id": "#/properties/feide-clientinfo/properties/objectType",
+                    "type": "string"
+                }
+            },
+            "additionalProperties": true
+        }
+    },
+    "additionalProperties": false
+}
