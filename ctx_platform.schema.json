@@ -1,4 +1,4 @@
-
+{
     "type": "object",
     "required": [
         "platform"
@@ -60,3 +60,4 @@
     },
     "additionalProperties": false
 
+}
