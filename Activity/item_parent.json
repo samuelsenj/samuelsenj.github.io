@@ -1,0 +1,11 @@
+{
+    "name": {
+        "nb-NO": "Overgangsprøven i regning, 4. trinn."
+    },
+    "description": {
+        "nb-NO": "Overgangsprøven i regning, 4. trinn, Osloprøvene."
+    },
+    "extensions": {
+        "https://w3id.org/xapi/adaptivity_and_assessment/extensions/authoritative_uri": "https://osloprovene.inspera.no/ov-mat-4/"
+    }
+}
