@@ -1,0 +1,68 @@
+{
+  "type": "object",
+  "required": [
+    "profile"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "profile": {
+      "type": "array",
+      "additionalItems": false,
+      "items": {
+        "$ref": "#/$defs/Activity"
+      },
+      "uniqueItems": true
+    },
+    "tag": {
+      "type": "array",
+      "additionalItems": false,
+      "items": {
+        "$ref": "#/$defs/Activity"
+      },
+      "uniqueItems": true
+    }
+  },
+  "$defs": {
+    "Activity": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "iri"
+        },
+        "objectType": {
+          "enum": [
+            "Activity"
+          ]
+        },
+        "definition": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "object"
+            },
+            "description": {
+              "type": "object"
+            },
+            "type": {
+              "type": "string",
+              "format": "iri"
+            },
+            "moreInfo": {
+              "type": "string",
+              "format": "iri"
+            },
+            "extensions": {
+              "type": "object"
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "required": [
+        "id"
+      ]
+    }
+  }
+}

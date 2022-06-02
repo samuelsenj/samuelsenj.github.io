@@ -1,0 +1,133 @@
+{
+    "type": "object",
+    "required": [
+        "instructor",
+        "grade",
+        "school",
+        "school_owner"
+    ],
+    "additionalProperties": false,
+    "properties": {
+        "instructor": {
+            "type": "object",
+            "oneOf": [
+                {
+                    "required": [
+                        "mbox"
+                    ]
+                },
+                {
+                    "required": [
+                        "mbox_sha1sum"
+                    ]
+                },
+                {
+                    "required": [
+                        "openid"
+                    ]
+                },
+                {
+                    "required": [
+                        "account"
+                    ]
+                }
+            ],
+            "additionalProperties": false,
+            "properties": {
+                "name": {
+                    "type": "string"
+                },
+                "mbox": {
+                    "type": "string",
+                    "pattern": "^mailto:.*$"
+                },
+                "mbox_sha1sum": {
+                    "type": "string",
+                    "pattern": "^[0-9a-f]{40}$"
+                },
+                "openid": {
+                    "type": "string",
+                    "format": "uri"
+                },
+                "account": {
+                    "type": "object",
+                    "required": [
+                        "homePage",
+                        "name"
+                    ],
+                    "additionalProperties": false,
+                    "properties": {
+                        "homePage": {
+                            "type": "string",
+                            "format": "uri"
+                        },
+                        "name": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "objectType": {
+                    "type": "string",
+                    "pattern": "Agent"
+                }
+            }
+        },
+        "grade": {
+            "type": "number",
+            "maxLength": 2
+        },
+        "class": {
+            "type": "string",
+            "pattern": "[A-Z]"
+        },
+        "school": {
+            "$ref": "#/$defs/Activity"
+        },
+        "school_owner": {
+            "$ref": "#/$defs/Activity"
+        }
+    },
+    "$defs": {
+        "Activity": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "id": {
+                    "type": "string",
+                    "format": "iri"
+                },
+                "objectType": {
+                    "enum": [
+                        "Activity"
+                    ]
+                },
+                "definition": {
+                    "type": "object",
+                    "properties": {
+                        "name": {
+                            "type": "object"
+                        },
+                        "description": {
+                            "type": "object"
+                        },
+                        "type": {
+                            "type": "string",
+                            "format": "iri"
+                        },
+                        "moreInfo": {
+                            "type": "string",
+                            "format": "iri"
+                        },
+                        "extensions": {
+                            "type": "object"
+                        }
+                    },
+                    "additionalProperties": true
+                }
+            },
+            "required": [
+                "id"
+            ]
+        }
+    }
+}

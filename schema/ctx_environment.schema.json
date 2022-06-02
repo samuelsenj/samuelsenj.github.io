@@ -1,0 +1,29 @@
+{
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+        "latitude": {
+            "type": "number",
+            "minimum": -90,
+            "maximum": 90
+        },
+        "longitude": {
+            "type": "number",
+            "minimum": -180,
+            "maximum": 180
+        },
+        "noise_level_db": {
+            "type": "number",
+            "minimum": 0
+        },
+        "accelerationX": {
+            "type": "number"
+        },
+        "accelerationY": {
+            "type": "number"
+        },
+        "accelerationZ": {
+            "type": "number"
+        }
+    }
+}
