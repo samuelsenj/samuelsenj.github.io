@@ -1,0 +1,41 @@
+{
+  "type": "object",
+  "required": [
+    "connection_type"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "connection_type": {
+      "enum": [
+        "bluetooth",
+        "cellular",
+        "ethernet",
+        "mixed",
+        "none",
+        "other",
+        "unknown",
+        "wifi",
+        "wimax"
+      ]
+    },
+    "effective_connection_type": {
+      "enum": [
+        "slow-2g",
+        "2g",
+        "3g",
+        "4g"
+      ]
+    },
+    "battery_level": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "screen_width": {
+      "type": "integer"
+    },
+    "screen_height": {
+      "type": "integer"
+    }
+  }
+}
