@@ -1,5 +1,5 @@
 {
-  "type": "obj",
+  "type": "object",
   "required": [
     "profile"
   ],
