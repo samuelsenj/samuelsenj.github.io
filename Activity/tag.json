@@ -1,9 +1,0 @@
-{
-    "name": {
-        "nb-NO": "Matte"
-    },
-    "type": "http://id.tincanapi.com/activitytype/tag",
-    "extensions": {
-        "https://w3id.org/xapi/adaptivity_and_assessment/extensions/authoritative_uri": "https://data-nsr.udir.no/enhet/974589648"
-    }
-}
