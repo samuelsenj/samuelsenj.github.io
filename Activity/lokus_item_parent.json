@@ -1,1 +1,14 @@
-
+{
+    "definition": {
+        "name": {
+            "nb-NO": "4 Tall og algebra - Kapitteltest"
+        },
+        "description": {
+            "nb-NO": "4 Tall og algebra - Kapitteltest, lokus"
+        },
+        "type": "http://adlnet.gov/expapi/activities/assessment",
+        "extensions": {
+          "https://w3id.org/xapi/adaptivity_and_assessment/extensions/authoritative_uri": "https://osloprovene.inspera.no/ov-mat-4/"
+        }
+    }
+}
