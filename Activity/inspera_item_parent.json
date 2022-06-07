@@ -7,6 +7,5 @@
     },
     "extensions": {
         "https://w3id.org/xapi/adaptivity_and_assessment/extensions/authoritative_uri": "https://osloprovene.inspera.no/ov-mat-4/"
-    },
-    "authoritative_uri": "https://osloprovene.inspera.no/ov-mat-4/"
+    }
 }
