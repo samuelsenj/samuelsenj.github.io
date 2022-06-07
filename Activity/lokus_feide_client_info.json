@@ -1,1 +1,9 @@
-
+{
+    "name": {
+        "nb-NO": "Lokus"
+    },
+    "type": "https://w3id.org/xapi/avt/activity-types/feide-clientinfo",
+    "extensions": {
+        "https://w3id.org/xapi/adaptivity_and_assessment/extensions/authoritative_uri": "https://api.feide.no/2/sp/1723883"
+    }
+}
