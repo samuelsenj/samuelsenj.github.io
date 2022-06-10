@@ -1,12 +1,12 @@
 {
-   "id": "http://www.lokus.no/open/nummer/Nummer-8/",
-   "definition":{
       "name":{
          "nb-NO":"Lokus matematikk, 8. trinn"
       },
       "description":{
          "nb-NO": "Aktiviteten som representerer Lokus sitt kurs i matte for 8. trinn"
       },
-      "type": "http://adlnet.gov/expapi/activities/course"
-   }
+      "type": "http://adlnet.gov/expapi/activities/course",
+      "extensions": {    
+         "https://w3id.org/xapi/adaptivity_and_assessment/extensions/authoritative_uri": "http://www.lokus.no/open/nummer/Nummer-8/"
+      }
 }
