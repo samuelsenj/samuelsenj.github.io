@@ -2,6 +2,7 @@
     "name": {
         "nb-NO": "Inspera"
     },
+    "description": "Inspera - feide clientinfo"
     "type": "https://w3id.org/xapi/avt/activity-types/feide-clientinfo",
     "extensions": {
         "https://w3id.org/xapi/adaptivity_and_assessment/extensions/authoritative_uri": "https://clientadmin.dataporten-api.no/clients/cc2b2720-4dae-4220-8258-1f6ac8c6dd4f"
