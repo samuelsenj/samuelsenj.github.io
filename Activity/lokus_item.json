@@ -6,9 +6,6 @@
         "nb-NO": "Hvilke er ligninger?"
     },
     "type": "http://adlnet.gov/expapi/activities/cmi.interaction",
-    "extensions": {
-        "https://w3id.org/xapi/adaptivity_and_assessment/extensions/authoritative_uri": "http://www.lokus.no/open/nummer/Nummer-8/4-Tall-og-algebra/Kapitteltest#oppgave-6"
-    },
     "interactionType": "choice",
     "choices": [
         {
@@ -38,5 +35,8 @@
     ],
     "correctResponsesPattern": [
         "B,C,D"
-    ]
+    ],
+    "extensions": {
+        "https://w3id.org/xapi/adaptivity_and_assessment/extensions/authoritative_uri": "http://www.lokus.no/open/nummer/Nummer-8/4-Tall-og-algebra/Kapitteltest#oppgave-6"
+    }
 }
