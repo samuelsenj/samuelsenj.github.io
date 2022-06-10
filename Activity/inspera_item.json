@@ -5,9 +5,6 @@
     "description": {
         "nb-NO": "Sofie hoppet 2,7 m i lengde. Neste gang hoppet hun 3,4 m.\nHvor langt hoppet hun til sammen?"
     },
-    "extensions": {
-        "https://w3id.org/xapi/adaptivity_and_assessment/extensions/authoritative_uri": "https://osloprovene.inspera.no/ov-mat-4/task/123456"
-    },
     "type": "http://adlnet.gov/expapi/activities/cmi.interaction",
     "interactionType": "choice",
     "choices": [
@@ -38,5 +35,8 @@
     ],
     "correctResponsesPattern": [
         "C"
-    ]
+    ],
+    "extensions": {
+        "https://w3id.org/xapi/adaptivity_and_assessment/extensions/authoritative_uri": "https://osloprovene.inspera.no/ov-mat-4/task/123456"
+    }
 }
