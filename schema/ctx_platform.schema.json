@@ -1,52 +1,64 @@
 {
   "type": "object",
+  "required": [
+      "platform"
+  ],
   "additionalProperties": false,
   "properties": {
-    "parent": {
+    "platform": {
       "$ref": "#/$defs/Activity"
+    },
+    "feide-clientinfo": {
+        "$ref": "#/$defs/Activity"
+    },
+    "course": {
+      "$ref": "#/$defs/Activity"
+    },
+    "module": {
+        "$ref": "#/$defs/Activity"
     }
   },
   "$defs": {
-    "Activity": {
-      "type": "object",
-      "additionalProperties": false,
-      "properties": {
-        "id": {
-          "type": "string",
-          "format": "iri"
-        },
-        "objectType": {
-          "enum": [
-            "Activity"
-          ]
-        },
-        "definition": {
+      "Activity": {
           "type": "object",
+          "additionalProperties": false,
           "properties": {
-            "name": {
-              "type": "object"
-            },
-            "description": {
-              "type": "object"
-            },
-            "type": {
-              "type": "string",
-              "format": "iri"
-            },
-            "moreInfo": {
-              "type": "string",
-              "format": "iri"
-            },
-            "extensions": {
-              "type": "object"
-            },
-            "additionalProperties": true
-          }
-        }
-      },
-      "required": [
-        "id"
-      ]
-    }
+              "id": {
+                  "type": "string",
+                  "format": "iri"
+              },
+              "objectType": {
+                  "enum": [
+                      "Activity"
+                  ]
+              },
+              "definition": {
+                  "type": "object",
+                  "properties": {
+                      "name": {
+                          "type": "object"
+                      },
+                      "description": {
+                          "type": "object"
+                      },
+                      "type": {
+                          "type": "string",
+                          "format": "iri"
+                      },
+                      "moreInfo": {
+                          "type": "string",
+                          "format": "iri"
+                      },
+                      "extensions": {
+                          "type": "object"
+                      }
+                  },
+                  "additionalProperties": true
+              }
+          },
+          "required": [
+              "id"
+          ]
+      }
   }
 }
