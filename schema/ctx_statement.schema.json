@@ -16,9 +16,7 @@
     "tag": {
       "type": "array",
       "additionalItems": false,
-      "items": {
-        "$ref": "#/$defs/Activity"
-      },
+      "items": { "type": "string" },
       "uniqueItems": true
     }
   },
