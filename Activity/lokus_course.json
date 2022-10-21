@@ -7,6 +7,6 @@
       },
       "type": "http://adlnet.gov/expapi/activities/course",
       "extensions": {    
-         "https://w3id.org/xapi/adaptivity_and_assessment/extensions/authoritative_uri": "http://www.lokus.no/open/nummer/Nummer-8/"
+         "https://w3id.org/xapi/adaptivity_and_assessment/extensions/authoritative_iri": "http://www.lokus.no/open/nummer/Nummer-8/"
       }
 }
