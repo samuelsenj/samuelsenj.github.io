@@ -37,6 +37,6 @@
         "C"
     ],
     "extensions": {
-        "https://w3id.org/xapi/adaptivity_and_assessment/extensions/authoritative_uri": "https://osloprovene.inspera.no/ov-mat-4/task/123456"
+        "https://w3id.org/xapi/adaptivity_and_assessment/extensions/authoritative_iri": "https://osloprovene.inspera.no/ov-mat-4/task/123456"
     }
 }
