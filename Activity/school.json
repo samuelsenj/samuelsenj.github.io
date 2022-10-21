@@ -4,6 +4,6 @@
     },
     "type": "https://w3id.org/xapi/avt/activity-types/school",
     "extensions": {
-        "https://w3id.org/xapi/adaptivity_and_assessment/extensions/authoritative_uri": "https://data-nsr.udir.no/enhet/974589648"
+        "https://w3id.org/xapi/adaptivity_and_assessment/extensions/authoritative_iri": "https://data-nsr.udir.no/enhet/974589648"
     }
 }
