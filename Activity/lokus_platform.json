@@ -4,6 +4,6 @@
     },
     "type": "https://w3id.org/xapi/school_adaptivity/activity-types/platform",
     "extensions": {
-        "https://w3id.org/xapi/adaptivity_and_assessment/extensions/authoritative_uri": "https://aunivers.lokus.no/"
+        "https://w3id.org/xapi/adaptivity_and_assessment/extensions/authoritative_iri": "https://aunivers.lokus.no/"
     }
 }
