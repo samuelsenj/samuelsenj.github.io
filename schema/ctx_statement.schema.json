@@ -6,12 +6,16 @@
   "additionalProperties": false,
   "properties": {
     "profile": {
-      "type": "array",
-      "additionalItems": false,
-      "items": {
-        "$ref": "#/$defs/Activity"
-      },
-      "uniqueItems": true
+      "allOf": [{ "$ref": "#/$defs/Activity" }],
+      "properties": {
+         "definition": {
+             "properties": {
+             "type": { 
+                 "const": "http://adlnet.gov/expapi/activities/profile"
+               }
+           }
+         }
+      }
     },
     "tag": {
       "type": "array",
@@ -25,7 +29,6 @@
   "$defs": {
     "Activity": {
       "type": "object",
-      "additionalProperties": false,
       "properties": {
         "id": {
           "type": "string",

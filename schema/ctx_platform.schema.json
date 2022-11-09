@@ -6,22 +6,57 @@
   "additionalProperties": false,
   "properties": {
     "platform": {
-      "$ref": "#/$defs/Activity"
+        "allOf": [{ "$ref": "#/$defs/Activity" }],
+        "properties": {
+           "definition": {
+               "properties": {
+                 "type": { 
+                     "const": "https://w3id.org/xapi/school_adaptivity/activity-types/platform"
+                 }
+             } 
+           }
+        }
     },
     "feide-clientinfo": {
-        "$ref": "#/$defs/Activity"
+        "allOf": [{ "$ref": "#/$defs/Activity" }],
+        "properties": {
+           "definition": {
+               "properties": {
+                 "type": { 
+                     "const": "https://w3id.org/xapi/avt/activity-types/feide-clientinfo"
+                 }
+             } 
+           }
+        }
     },
     "course": {
-      "$ref": "#/$defs/Activity"
+        "allOf": [{ "$ref": "#/$defs/Activity" }],
+        "properties": {
+           "definition": {
+               "properties": {
+                 "type": { 
+                     "const": "http://adlnet.gov/expapi/activities/course"
+                 }
+             } 
+           }
+        }
     },
     "module": {
-        "$ref": "#/$defs/Activity"
+        "allOf": [{ "$ref": "#/$defs/Activity" }],
+        "properties": {
+           "definition": {
+               "properties": {
+                 "type": { 
+                     "const": "http://adlnet.gov/expapi/activities/module"
+                 }
+             } 
+           }
+        }
     }
   },
   "$defs": {
       "Activity": {
           "type": "object",
-          "additionalProperties": false,
           "properties": {
               "id": {
                   "type": "string",

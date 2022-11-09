@@ -73,24 +73,40 @@
             }
         },
         "grade": {
-            "type": "number",
-            "maxLength": 2
+            "type": "integer"
         },
         "class": {
             "type": "string",
             "pattern": "[A-Z]"
         },
         "school": {
-            "$ref": "#/$defs/Activity"
+            "allOf": [{ "$ref": "#/$defs/Activity" }],
+            "properties": {
+               "definition": {
+                   "properties": {
+	                 "type": { 
+                   	  "const": "https://w3id.org/xapi/avt/activity-types/school"
+                     }
+                 } 
+               }
+            }
         },
         "school_owner": {
-            "$ref": "#/$defs/Activity"
+            "allOf": [{ "$ref": "#/$defs/Activity" }],
+            "properties": {
+                "definition": {
+                    "properties": {
+                      "type": { 
+                          "const": "https://w3id.org/xapi/avt/activity-types/school-owner"
+                      }
+                  } 
+                }
+             }
         }
     },
     "$defs": {
         "Activity": {
             "type": "object",
-            "additionalProperties": false,
             "properties": {
                 "id": {
                     "type": "string",
