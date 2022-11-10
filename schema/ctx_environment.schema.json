@@ -16,13 +16,13 @@
             "type": "number",
             "minimum": 0
         },
-        "accelerationX": {
+        "linear_accelerationX": {
             "type": "number"
         },
-        "accelerationY": {
+        "linear_accelerationY": {
             "type": "number"
         },
-        "accelerationZ": {
+        "linear_accelerationZ": {
             "type": "number"
         }
     }
